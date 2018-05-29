@@ -25,8 +25,8 @@ public:
     SimpleLinkedList<Metadata> getTrackByArtist(std::string artist);
     SimpleLinkedList<Metadata> getTrackByName(std::string name);
     SimpleLinkedList<Userdata> getUsers();
-    std::string getUserFriends[](std::string username);
-    std::string getUserPreferences[](std::string username);
+    SimpleLinkedList<std::string> getUserFriends(std::string username);
+    SimpleLinkedList<std::string> getUserPreferences(std::string username);
 
 };
 

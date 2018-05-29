@@ -196,18 +196,18 @@ SimpleLinkedList<Userdata> Query::getUsers(){
                 userdata.setPassword(d["users"][h]["password"].GetString());
             }
             if (d["users"][h].HasMember("friends")) {
-                std::string friends[d["users"][h]["friends"].Size()];
+                SimpleLinkedList<std::string> friends;
                 for(int y = 0; y < d["users"][h]["friends"].Size(); y++){
-                    friends[y] = d["users"][h]["friends"][y].GetString();
+                    friends.insertRear(d["users"][h]["friends"][y].GetString());
                 }
                 userdata.setFriends(friends);
             }
             if (d["users"][h].HasMember("preferences")) {
-                std::string preferences[d["users"][h]["preferences"].Size()];
+                SimpleLinkedList<std::string> preferences;
                 for(int y = 0; y < d["users"][h]["preferences"].Size(); y++){
-                    preferences[y] = d["users"][h]["preferences"][y].GetString();
+                    preferences.insertRear(d["users"][h]["preferences"][y].GetString());
                 }
-                userdata.setFriends(preferences);
+                userdata.setPreferences(preferences);
             }
 
             users.insertRear(userdata);
@@ -216,7 +216,7 @@ SimpleLinkedList<Userdata> Query::getUsers(){
 
     return users;
 }
-std::string Query::getUserFriends[](std::string username) {
+SimpleLinkedList<std::string> Query::getUserFriends(std::string username) {
     FILE *fp = fopen("../DataBase/database.json", "r"); // non-Windows use "r"
     char readBuffer[65536];
     FileReadStream is(fp, readBuffer, sizeof(readBuffer));
@@ -225,41 +225,39 @@ std::string Query::getUserFriends[](std::string username) {
     fclose(fp);
 
     int totalUsers = d["users"].Size();
-
+    SimpleLinkedList<std::string> friends;
     for (int h = 0; h < totalUsers; h++) {
 
-        if (d["users"][h].HasMember("friends") && d["users"][h]["username"] == username) {
-            std::string friends[d["users"][h]["friends"].Size()];
+        if (d["users"][h].HasMember("friends") && d["users"][h]["username"].GetString() == username) {
+
             for (int y = 0; y < d["users"][h]["friends"].Size(); y++) {
-                friends[y] = d["users"][h]["friends"][y].GetString();
+                friends.insertRear(d["users"][h]["friends"][y].GetString());
             }
             return friends;
         } else {
-            std::string friends[] = {};
             return friends;
         }
     }
 }
-std::string Query::getUserPreferences[](std::string username){
+SimpleLinkedList<std::string> Query::getUserPreferences(std::string username){
     FILE *fp = fopen("../DataBase/database.json", "r"); // non-Windows use "r"
     char readBuffer[65536];
     FileReadStream is(fp, readBuffer, sizeof(readBuffer));
     Document d;
     d.ParseStream(is);
     fclose(fp);
-
+    SimpleLinkedList<std::string> preferences;
     int totalUsers = d["users"].Size();
 
     for (int h = 0; h < totalUsers; h++) {
 
-        if (d["users"][h].HasMember("preferences") && d["users"][h]["username"] == username) {
-            std::string preferences[d["users"][h]["preferences"].Size()];
+        if (d["users"][h].HasMember("preferences") && d["users"][h]["username"].GetString() == username) {
+
             for (int y = 0; y < d["users"][h]["preferences"].Size(); y++) {
-                preferences[y] = d["users"][h]["preferences"][y].GetString();
+                preferences.insertRear(d["users"][h]["preferences"][y].GetString());
             }
             return preferences;
         } else {
-            std::string preferences[] = {};
             return preferences;
         }
     }

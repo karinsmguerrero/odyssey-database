@@ -20,28 +20,31 @@ void Userdata::setPassword( std::string password) {
     Userdata::password = password;
 }
 
- std::string Userdata::getFriends[]()  {
-    return friends;
-}
 
- std::string Userdata::getPreferences[]()  {
-    return preferences;
-}
-
-void Userdata::setPreferences( std::string preferences[]) {
+void Userdata::setPreferences( SimpleLinkedList<std::string> preferences) {
     Userdata::preferences = preferences;
+}
+
+void Userdata::setFriends(SimpleLinkedList<std::string> friends) {
+    Userdata::friends = friends;
 }
 
 Userdata::Userdata() {
     this->username = "";
     this->password = "";
-    this->friends = nullptr;
-    this->preferences = nullptr;
 }
 
-Userdata::Userdata(std::string username, std::string password, std::string friends[], std::string preferences[]) {
+Userdata::Userdata(std::string username, std::string password, SimpleLinkedList<std::string> friends, SimpleLinkedList<std::string> preferences) {
     this->username = username;
     this->password = password;
     this->friends = friends;
     this->preferences = preferences;
+}
+
+SimpleLinkedList<std::string> Userdata::getFriends(){
+    return friends;
+}
+
+SimpleLinkedList< std::string> Userdata::getPreferences()  {
+    return preferences;
 }

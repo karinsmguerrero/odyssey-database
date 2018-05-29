@@ -8,8 +8,11 @@
 #include "pugixml.hpp"
 #include "../DataStructures/SimpleLinkedList.h"
 #include "../DataBase/Metadata.h"
+#include "../DataBase/Query.h"
 
 class XML_Editor {
+private:
+    Query query;
 public:
     std::string readMessage(const char xml[]);
     std::string writeEditRequest(std::string name, std::string artist);

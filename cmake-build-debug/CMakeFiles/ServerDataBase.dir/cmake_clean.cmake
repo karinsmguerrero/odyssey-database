@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/ServerDataBase.dir/main.cpp.o"
-  "CMakeFiles/ServerDataBase.dir/DataBase/QueryManager.cpp.o"
   "CMakeFiles/ServerDataBase.dir/DataBase/Query.cpp.o"
   "CMakeFiles/ServerDataBase.dir/DataBase/Metadata.cpp.o"
   "CMakeFiles/ServerDataBase.dir/XML/pugixml.cpp.o"

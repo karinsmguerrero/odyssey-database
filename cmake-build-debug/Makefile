@@ -177,33 +177,6 @@ DataBase/Query.cpp.s:
 	$(MAKE) -f CMakeFiles/ServerDataBase.dir/build.make CMakeFiles/ServerDataBase.dir/DataBase/Query.cpp.s
 .PHONY : DataBase/Query.cpp.s
 
-DataBase/QueryManager.o: DataBase/QueryManager.cpp.o
-
-.PHONY : DataBase/QueryManager.o
-
-# target to build an object file
-DataBase/QueryManager.cpp.o:
-	$(MAKE) -f CMakeFiles/ServerDataBase.dir/build.make CMakeFiles/ServerDataBase.dir/DataBase/QueryManager.cpp.o
-.PHONY : DataBase/QueryManager.cpp.o
-
-DataBase/QueryManager.i: DataBase/QueryManager.cpp.i
-
-.PHONY : DataBase/QueryManager.i
-
-# target to preprocess a source file
-DataBase/QueryManager.cpp.i:
-	$(MAKE) -f CMakeFiles/ServerDataBase.dir/build.make CMakeFiles/ServerDataBase.dir/DataBase/QueryManager.cpp.i
-.PHONY : DataBase/QueryManager.cpp.i
-
-DataBase/QueryManager.s: DataBase/QueryManager.cpp.s
-
-.PHONY : DataBase/QueryManager.s
-
-# target to generate assembly for a file
-DataBase/QueryManager.cpp.s:
-	$(MAKE) -f CMakeFiles/ServerDataBase.dir/build.make CMakeFiles/ServerDataBase.dir/DataBase/QueryManager.cpp.s
-.PHONY : DataBase/QueryManager.cpp.s
-
 DataBase/Userdata.o: DataBase/Userdata.cpp.o
 
 .PHONY : DataBase/Userdata.o
@@ -327,9 +300,6 @@ help:
 	@echo "... DataBase/Query.o"
 	@echo "... DataBase/Query.i"
 	@echo "... DataBase/Query.s"
-	@echo "... DataBase/QueryManager.o"
-	@echo "... DataBase/QueryManager.i"
-	@echo "... DataBase/QueryManager.s"
 	@echo "... DataBase/Userdata.o"
 	@echo "... DataBase/Userdata.i"
 	@echo "... DataBase/Userdata.s"

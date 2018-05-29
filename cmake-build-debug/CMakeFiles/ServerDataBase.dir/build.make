@@ -81,33 +81,9 @@ CMakeFiles/ServerDataBase.dir/main.cpp.o.provides: CMakeFiles/ServerDataBase.dir
 CMakeFiles/ServerDataBase.dir/main.cpp.o.provides.build: CMakeFiles/ServerDataBase.dir/main.cpp.o
 
 
-CMakeFiles/ServerDataBase.dir/DataBase/QueryManager.cpp.o: CMakeFiles/ServerDataBase.dir/flags.make
-CMakeFiles/ServerDataBase.dir/DataBase/QueryManager.cpp.o: ../DataBase/QueryManager.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/karina/Dropbox/TEC/2018/Algoritmos y estructuras de datos II/ServerDataBase/base de datos y xml modificados/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/ServerDataBase.dir/DataBase/QueryManager.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ServerDataBase.dir/DataBase/QueryManager.cpp.o -c "/home/karina/Dropbox/TEC/2018/Algoritmos y estructuras de datos II/ServerDataBase/base de datos y xml modificados/DataBase/QueryManager.cpp"
-
-CMakeFiles/ServerDataBase.dir/DataBase/QueryManager.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ServerDataBase.dir/DataBase/QueryManager.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/karina/Dropbox/TEC/2018/Algoritmos y estructuras de datos II/ServerDataBase/base de datos y xml modificados/DataBase/QueryManager.cpp" > CMakeFiles/ServerDataBase.dir/DataBase/QueryManager.cpp.i
-
-CMakeFiles/ServerDataBase.dir/DataBase/QueryManager.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ServerDataBase.dir/DataBase/QueryManager.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/karina/Dropbox/TEC/2018/Algoritmos y estructuras de datos II/ServerDataBase/base de datos y xml modificados/DataBase/QueryManager.cpp" -o CMakeFiles/ServerDataBase.dir/DataBase/QueryManager.cpp.s
-
-CMakeFiles/ServerDataBase.dir/DataBase/QueryManager.cpp.o.requires:
-
-.PHONY : CMakeFiles/ServerDataBase.dir/DataBase/QueryManager.cpp.o.requires
-
-CMakeFiles/ServerDataBase.dir/DataBase/QueryManager.cpp.o.provides: CMakeFiles/ServerDataBase.dir/DataBase/QueryManager.cpp.o.requires
-	$(MAKE) -f CMakeFiles/ServerDataBase.dir/build.make CMakeFiles/ServerDataBase.dir/DataBase/QueryManager.cpp.o.provides.build
-.PHONY : CMakeFiles/ServerDataBase.dir/DataBase/QueryManager.cpp.o.provides
-
-CMakeFiles/ServerDataBase.dir/DataBase/QueryManager.cpp.o.provides.build: CMakeFiles/ServerDataBase.dir/DataBase/QueryManager.cpp.o
-
-
 CMakeFiles/ServerDataBase.dir/DataBase/Query.cpp.o: CMakeFiles/ServerDataBase.dir/flags.make
 CMakeFiles/ServerDataBase.dir/DataBase/Query.cpp.o: ../DataBase/Query.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/karina/Dropbox/TEC/2018/Algoritmos y estructuras de datos II/ServerDataBase/base de datos y xml modificados/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/ServerDataBase.dir/DataBase/Query.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/karina/Dropbox/TEC/2018/Algoritmos y estructuras de datos II/ServerDataBase/base de datos y xml modificados/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/ServerDataBase.dir/DataBase/Query.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ServerDataBase.dir/DataBase/Query.cpp.o -c "/home/karina/Dropbox/TEC/2018/Algoritmos y estructuras de datos II/ServerDataBase/base de datos y xml modificados/DataBase/Query.cpp"
 
 CMakeFiles/ServerDataBase.dir/DataBase/Query.cpp.i: cmake_force
@@ -131,7 +107,7 @@ CMakeFiles/ServerDataBase.dir/DataBase/Query.cpp.o.provides.build: CMakeFiles/Se
 
 CMakeFiles/ServerDataBase.dir/DataBase/Metadata.cpp.o: CMakeFiles/ServerDataBase.dir/flags.make
 CMakeFiles/ServerDataBase.dir/DataBase/Metadata.cpp.o: ../DataBase/Metadata.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/karina/Dropbox/TEC/2018/Algoritmos y estructuras de datos II/ServerDataBase/base de datos y xml modificados/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/ServerDataBase.dir/DataBase/Metadata.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/karina/Dropbox/TEC/2018/Algoritmos y estructuras de datos II/ServerDataBase/base de datos y xml modificados/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/ServerDataBase.dir/DataBase/Metadata.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ServerDataBase.dir/DataBase/Metadata.cpp.o -c "/home/karina/Dropbox/TEC/2018/Algoritmos y estructuras de datos II/ServerDataBase/base de datos y xml modificados/DataBase/Metadata.cpp"
 
 CMakeFiles/ServerDataBase.dir/DataBase/Metadata.cpp.i: cmake_force
@@ -155,7 +131,7 @@ CMakeFiles/ServerDataBase.dir/DataBase/Metadata.cpp.o.provides.build: CMakeFiles
 
 CMakeFiles/ServerDataBase.dir/XML/pugixml.cpp.o: CMakeFiles/ServerDataBase.dir/flags.make
 CMakeFiles/ServerDataBase.dir/XML/pugixml.cpp.o: ../XML/pugixml.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/karina/Dropbox/TEC/2018/Algoritmos y estructuras de datos II/ServerDataBase/base de datos y xml modificados/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/ServerDataBase.dir/XML/pugixml.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/karina/Dropbox/TEC/2018/Algoritmos y estructuras de datos II/ServerDataBase/base de datos y xml modificados/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/ServerDataBase.dir/XML/pugixml.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ServerDataBase.dir/XML/pugixml.cpp.o -c "/home/karina/Dropbox/TEC/2018/Algoritmos y estructuras de datos II/ServerDataBase/base de datos y xml modificados/XML/pugixml.cpp"
 
 CMakeFiles/ServerDataBase.dir/XML/pugixml.cpp.i: cmake_force
@@ -179,7 +155,7 @@ CMakeFiles/ServerDataBase.dir/XML/pugixml.cpp.o.provides.build: CMakeFiles/Serve
 
 CMakeFiles/ServerDataBase.dir/XML/XML_Editor.cpp.o: CMakeFiles/ServerDataBase.dir/flags.make
 CMakeFiles/ServerDataBase.dir/XML/XML_Editor.cpp.o: ../XML/XML_Editor.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/karina/Dropbox/TEC/2018/Algoritmos y estructuras de datos II/ServerDataBase/base de datos y xml modificados/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/ServerDataBase.dir/XML/XML_Editor.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/karina/Dropbox/TEC/2018/Algoritmos y estructuras de datos II/ServerDataBase/base de datos y xml modificados/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/ServerDataBase.dir/XML/XML_Editor.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ServerDataBase.dir/XML/XML_Editor.cpp.o -c "/home/karina/Dropbox/TEC/2018/Algoritmos y estructuras de datos II/ServerDataBase/base de datos y xml modificados/XML/XML_Editor.cpp"
 
 CMakeFiles/ServerDataBase.dir/XML/XML_Editor.cpp.i: cmake_force
@@ -203,7 +179,7 @@ CMakeFiles/ServerDataBase.dir/XML/XML_Editor.cpp.o.provides.build: CMakeFiles/Se
 
 CMakeFiles/ServerDataBase.dir/DataBase/Userdata.cpp.o: CMakeFiles/ServerDataBase.dir/flags.make
 CMakeFiles/ServerDataBase.dir/DataBase/Userdata.cpp.o: ../DataBase/Userdata.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/karina/Dropbox/TEC/2018/Algoritmos y estructuras de datos II/ServerDataBase/base de datos y xml modificados/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/ServerDataBase.dir/DataBase/Userdata.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/karina/Dropbox/TEC/2018/Algoritmos y estructuras de datos II/ServerDataBase/base de datos y xml modificados/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/ServerDataBase.dir/DataBase/Userdata.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ServerDataBase.dir/DataBase/Userdata.cpp.o -c "/home/karina/Dropbox/TEC/2018/Algoritmos y estructuras de datos II/ServerDataBase/base de datos y xml modificados/DataBase/Userdata.cpp"
 
 CMakeFiles/ServerDataBase.dir/DataBase/Userdata.cpp.i: cmake_force
@@ -228,7 +204,6 @@ CMakeFiles/ServerDataBase.dir/DataBase/Userdata.cpp.o.provides.build: CMakeFiles
 # Object files for target ServerDataBase
 ServerDataBase_OBJECTS = \
 "CMakeFiles/ServerDataBase.dir/main.cpp.o" \
-"CMakeFiles/ServerDataBase.dir/DataBase/QueryManager.cpp.o" \
 "CMakeFiles/ServerDataBase.dir/DataBase/Query.cpp.o" \
 "CMakeFiles/ServerDataBase.dir/DataBase/Metadata.cpp.o" \
 "CMakeFiles/ServerDataBase.dir/XML/pugixml.cpp.o" \
@@ -239,7 +214,6 @@ ServerDataBase_OBJECTS = \
 ServerDataBase_EXTERNAL_OBJECTS =
 
 ServerDataBase: CMakeFiles/ServerDataBase.dir/main.cpp.o
-ServerDataBase: CMakeFiles/ServerDataBase.dir/DataBase/QueryManager.cpp.o
 ServerDataBase: CMakeFiles/ServerDataBase.dir/DataBase/Query.cpp.o
 ServerDataBase: CMakeFiles/ServerDataBase.dir/DataBase/Metadata.cpp.o
 ServerDataBase: CMakeFiles/ServerDataBase.dir/XML/pugixml.cpp.o
@@ -247,7 +221,7 @@ ServerDataBase: CMakeFiles/ServerDataBase.dir/XML/XML_Editor.cpp.o
 ServerDataBase: CMakeFiles/ServerDataBase.dir/DataBase/Userdata.cpp.o
 ServerDataBase: CMakeFiles/ServerDataBase.dir/build.make
 ServerDataBase: CMakeFiles/ServerDataBase.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/karina/Dropbox/TEC/2018/Algoritmos y estructuras de datos II/ServerDataBase/base de datos y xml modificados/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable ServerDataBase"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/karina/Dropbox/TEC/2018/Algoritmos y estructuras de datos II/ServerDataBase/base de datos y xml modificados/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable ServerDataBase"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ServerDataBase.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -256,7 +230,6 @@ CMakeFiles/ServerDataBase.dir/build: ServerDataBase
 .PHONY : CMakeFiles/ServerDataBase.dir/build
 
 CMakeFiles/ServerDataBase.dir/requires: CMakeFiles/ServerDataBase.dir/main.cpp.o.requires
-CMakeFiles/ServerDataBase.dir/requires: CMakeFiles/ServerDataBase.dir/DataBase/QueryManager.cpp.o.requires
 CMakeFiles/ServerDataBase.dir/requires: CMakeFiles/ServerDataBase.dir/DataBase/Query.cpp.o.requires
 CMakeFiles/ServerDataBase.dir/requires: CMakeFiles/ServerDataBase.dir/DataBase/Metadata.cpp.o.requires
 CMakeFiles/ServerDataBase.dir/requires: CMakeFiles/ServerDataBase.dir/XML/pugixml.cpp.o.requires

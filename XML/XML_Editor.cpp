@@ -58,6 +58,11 @@ std::string XML_Editor::readMessage(const char xml[]) {
     std::string subject = doc.child("root").child("subject").text().get();
     if(subject == "01"){
 
+    }else if(subject == "02"){
+        //upload request
+        //Sacar metadata del mensaje
+        Metadata metada;
+        std::string songName = doc.child("root").child("subject").text().get();
     }
 }
 

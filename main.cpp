@@ -4,6 +4,9 @@
 
 int main() {
     Query query;
+    XML_Editor xml;
+    std::string message = xml.writeAlbumSearchRequest("Sorry sorry");
+    std::cout << message << std::endl;
     SimpleLinkedList<Metadata> tracksList = query.getAllTracks();
 
     XML_Editor editor;

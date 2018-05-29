@@ -7,17 +7,18 @@
 
 
 #include <string>
+#include "../DataStructures/SimpleLinkedList.h"
 
 class Userdata {
-private:
-    std::string username;
-    std::string password;
-    std::string friends[];
-    std::string preferences[];
+
 public:
+     SimpleLinkedList<std::string> getFriends() ;
+
+     SimpleLinkedList<std::string> getPreferences() ;
+
     Userdata();
 
-    Userdata(std::string username, std::string password, std::string friends[], std::string preferences[]);
+    Userdata(std::string username, std::string password, SimpleLinkedList<std::string> friends, SimpleLinkedList<std::string>preferences);
 
     std::string getUsername();
 
@@ -27,13 +28,18 @@ public:
 
     void setPassword(std::string password);
 
-    std::string getFriends[]();
 
-    void setFriends(std::string friends[]);
 
-    std::string getPreferences[]();
+    void setFriends(SimpleLinkedList<std::string> friends);
 
-    void setPreferences(std::string preferences[]);
+
+
+    void setPreferences(SimpleLinkedList<std::string> preferences);
+
+private:
+    std::string username;
+    std::string password;
+    SimpleLinkedList<std::string> preferences, friends;
 
 };
 
