@@ -48,10 +48,10 @@ RM = /home/karina/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/181.5087.36/bin
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/home/karina/Dropbox/TEC/2018/Algoritmos y estructuras de datos II/ServerDataBase"
+CMAKE_SOURCE_DIR = "/home/karina/Dropbox/TEC/2018/Algoritmos y estructuras de datos II/ServerDataBase/base de datos y xml modificados"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/home/karina/Dropbox/TEC/2018/Algoritmos y estructuras de datos II/ServerDataBase/cmake-build-debug"
+CMAKE_BINARY_DIR = "/home/karina/Dropbox/TEC/2018/Algoritmos y estructuras de datos II/ServerDataBase/base de datos y xml modificados/cmake-build-debug"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/karina/Dropbox/TEC/2018/Algoritmos y estructuras de datos II/ServerDataBase/cmake-build-debug/CMakeFiles" "/home/karina/Dropbox/TEC/2018/Algoritmos y estructuras de datos II/ServerDataBase/cmake-build-debug/CMakeFiles/progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/karina/Dropbox/TEC/2018/Algoritmos y estructuras de datos II/ServerDataBase/base de datos y xml modificados/cmake-build-debug/CMakeFiles" "/home/karina/Dropbox/TEC/2018/Algoritmos y estructuras de datos II/ServerDataBase/base de datos y xml modificados/cmake-build-debug/CMakeFiles/progress.marks"
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/karina/Dropbox/TEC/2018/Algoritmos y estructuras de datos II/ServerDataBase/cmake-build-debug/CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/karina/Dropbox/TEC/2018/Algoritmos y estructuras de datos II/ServerDataBase/base de datos y xml modificados/cmake-build-debug/CMakeFiles" 0
 .PHONY : all
 
 # The main clean target

@@ -1,4 +1,4 @@
-# Install script for directory: /home/karina/Dropbox/TEC/2018/Algoritmos y estructuras de datos II/ServerDataBase
+# Install script for directory: /home/karina/Dropbox/TEC/2018/Algoritmos y estructuras de datos II/ServerDataBase/base de datos y xml modificados
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/karina/Dropbox/TEC/2018/Algoritmos y estructuras de datos II/ServerDataBase/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/karina/Dropbox/TEC/2018/Algoritmos y estructuras de datos II/ServerDataBase/base de datos y xml modificados/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
