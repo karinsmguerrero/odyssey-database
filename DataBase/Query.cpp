@@ -325,7 +325,7 @@ void Query::addNewUser(Userdata userdata) {
 
     Document::AllocatorType& allocator = d.GetAllocator();
     rapidjson::Value object(rapidjson::kObjectType);
-    if(!userdata.getUsername().empty()) {
+    /*if(!userdata.getUsername().empty()) {
         Value textPart;
         textPart.SetString(userdata.getUsername().c_str(), allocator);
         object.AddMember("username",textPart , allocator);
@@ -335,7 +335,8 @@ void Query::addNewUser(Userdata userdata) {
         textPart.SetString(userdata.getPassword().c_str(), allocator);
         object.AddMember("password", textPart, allocator);
     }
-    if(userdata.getFriends().getSize() != 0){
+
+    if(userdata.getFriends().getSize() > 0){
         std::cout << "friends" << std::endl;
         rapidjson::Value array(rapidjson::kArrayType);
         std::cout << "array" << std::endl;
@@ -351,10 +352,15 @@ void Query::addNewUser(Userdata userdata) {
             node = node->getNext();
         }
         object.AddMember("friends", array, allocator);
-    }
-    if(userdata.getPreferences().getSize() != 0){
+    }else {
+        std::cout << "no friends..." << std::endl;
+    }*/
+    if(userdata.getPreferences().getSize() > 0){
+
         std::cout << "preferences" << std::endl;
         rapidjson::Value array(rapidjson::kArrayType);
+        if(userdata.getPreferences().getHead() == nullptr)
+            std::cout << "sin cabeza" << std::endl;
         Node<std::string> *node = userdata.getPreferences().getHead();
         for(int i = 0; i < userdata.getPreferences().getSize(); i++){
             Value textPart;
@@ -364,9 +370,11 @@ void Query::addNewUser(Userdata userdata) {
             node = node->getNext();
         }
         object.AddMember("preferences", array, allocator);
+    }else {
+        std::cout << "no preferences..." << std::endl;
     }
-
-    d["users"].PushBack(object, allocator);
+    if(object.MemberCount() != 0)
+        d["users"].PushBack(object, allocator);
 
 
     FILE* fp2 = fopen("../DataBase/database.json", "w"); // non-Windows use "w"

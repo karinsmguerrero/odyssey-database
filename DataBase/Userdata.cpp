@@ -39,12 +39,13 @@ Userdata::Userdata(std::string username, std::string password, SimpleLinkedList<
     this->password = password;
     this->friends = friends;
     this->preferences = preferences;
+
 }
 
  SimpleLinkedList<std::string> Userdata::getFriends(){
     return friends;
 }
 
-SimpleLinkedList< std::string> Userdata::getPreferences()  {
+SimpleLinkedList<std::string> Userdata::getPreferences()  {
     return preferences;
 }

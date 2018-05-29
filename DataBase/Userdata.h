@@ -29,9 +29,7 @@ public:
     void setPassword(std::string password);
 
 
-
     void setFriends(SimpleLinkedList<std::string> friends);
-
 
 
     void setPreferences(SimpleLinkedList<std::string> preferences);
@@ -39,7 +37,8 @@ public:
 private:
     std::string username;
     std::string password;
-    SimpleLinkedList<std::string> preferences, friends;
+    SimpleLinkedList<std::string> preferences;
+    SimpleLinkedList<std::string> friends;
 
 };
 

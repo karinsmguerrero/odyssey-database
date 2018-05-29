@@ -219,4 +219,17 @@ Node<T>* SimpleLinkedList<T>::getTail() {
     return tail;
 }
 
+template<typename T>
+void SimpleLinkedList<T>::print() {
+    Node<T> *temp = head;
+    if (head != nullptr) {
+        for(int i = 0; i < size; ++i){
+            std::cout << "[" << temp->getData() << "]" << std::endl;
+            temp = temp->getNext();
+        }
+
+    } else {
+        std::cout << "Empty" << std::endl;
+    }
+}
 #endif //C_IDE_SIMPLELINKEDLIST_H
