@@ -41,7 +41,7 @@ Userdata::Userdata(std::string username, std::string password, SimpleLinkedList<
     this->preferences = preferences;
 }
 
-SimpleLinkedList<std::string> Userdata::getFriends(){
+ SimpleLinkedList<std::string> Userdata::getFriends(){
     return friends;
 }
 

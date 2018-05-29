@@ -4,12 +4,14 @@
 
 int main() {
     Query query;
-    XML_Editor xml;
-    std::string message = xml.writeAlbumSearchRequest("Sorry sorry");
-    std::cout << message << std::endl;
-    SimpleLinkedList<Metadata> tracksList = query.getAllTracks();
+    Metadata metadata("Superman", "", "Superman", "", "kpop", "2013");
+    //query.addNewTrack(metadata);
+    SimpleLinkedList<std::string> friends, preferences;
+    friends.insertRear("Bryan");
+    friends.insertRear("KMG");
+    preferences.insertRear("funk");
+    Userdata userdata("Jojo","12345",friends,preferences);
+    query.addNewUser(userdata);
 
-    XML_Editor editor;
-    std::cout << editor.writeUploadRequest(tracksList.getHead()->getData(), "000001011010101101101110") << std::endl;
     return 0;
 }

@@ -62,7 +62,21 @@ std::string XML_Editor::readMessage(const char xml[]) {
         //upload request
         //Sacar metadata del mensaje
         Metadata metada;
-        std::string songName = doc.child("root").child("subject").text().get();
+        std::string songName = doc.child("root").child("data").child("name").text().get();
+        metada.setSongName(songName);
+
+        std::string artist = doc.child("root").child("data").child("artist").text().get();
+        metada.setArtist(artist);
+
+        std::string album = doc.child("root").child("data").child("album").text().get();
+        metada.setAlbum(album);
+
+        std::string duration = doc.child("root").child("data").child("duration").text().get();
+        metada.setDuration(duration);
+
+        std::string year = doc.child("root").child("data").child("year").text().get();
+
+
     }
 }
 

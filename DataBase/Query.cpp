@@ -263,3 +263,115 @@ SimpleLinkedList<std::string> Query::getUserPreferences(std::string username){
     }
 
 }
+
+void Query::addNewTrack(Metadata metadata) {
+    FILE *fp = fopen("../DataBase/database.json", "r"); // non-Windows use "r"
+    char readBuffer[65536];
+    FileReadStream is(fp, readBuffer, sizeof(readBuffer));
+    Document d;
+    d.ParseStream(is);
+    fclose(fp);
+
+    Document::AllocatorType& allocator = d.GetAllocator();
+    rapidjson::Value object(rapidjson::kObjectType);
+    if(!metadata.getSongName().empty()) {
+        Value textPart;
+        textPart.SetString(metadata.getSongName().c_str(), allocator);
+        object.AddMember("name",textPart , allocator);
+    }
+    if(!metadata.getArtist().empty()){
+        Value textPart;
+        textPart.SetString(metadata.getArtist().c_str(), allocator);
+        object.AddMember("artist", textPart, allocator);
+        }
+    if(!metadata.getAlbum().empty()){
+        Value textPart;
+        textPart.SetString(metadata.getAlbum().c_str(), allocator);
+        object.AddMember("album", textPart, allocator);
+        }
+    if(!metadata.getDuration().empty()){
+        Value textPart;
+        textPart.SetString(metadata.getDuration().c_str(), allocator);
+        object.AddMember("duration", textPart, allocator);
+        }
+    if(!metadata.getGenre().empty()){
+        Value textPart;
+        textPart.SetString(metadata.getGenre().c_str(), allocator);
+        object.AddMember("genre", textPart, allocator);
+        }
+    if(!metadata.getYear().empty()){
+        Value textPart;
+        textPart.SetString(metadata.getYear().c_str(), allocator);
+        object.AddMember("year", textPart, allocator);
+        }
+    d["tracks"].PushBack(object, allocator);
+
+
+    FILE* fp2 = fopen("../DataBase/database.json", "w"); // non-Windows use "w"
+    char writeBuffer[65536];
+    FileWriteStream os(fp2, writeBuffer, sizeof(writeBuffer));
+    Writer<FileWriteStream> writer(os);
+    d.Accept(writer);
+    fclose(fp2);
+}
+
+void Query::addNewUser(Userdata userdata) {
+    FILE *fp = fopen("../DataBase/database.json", "r"); // non-Windows use "r"
+    char readBuffer[65536];
+    FileReadStream is(fp, readBuffer, sizeof(readBuffer));
+    Document d;
+    d.ParseStream(is);
+    fclose(fp);
+
+    Document::AllocatorType& allocator = d.GetAllocator();
+    rapidjson::Value object(rapidjson::kObjectType);
+    if(!userdata.getUsername().empty()) {
+        Value textPart;
+        textPart.SetString(userdata.getUsername().c_str(), allocator);
+        object.AddMember("username",textPart , allocator);
+    }
+    if(!userdata.getPassword().empty()){
+        Value textPart;
+        textPart.SetString(userdata.getPassword().c_str(), allocator);
+        object.AddMember("password", textPart, allocator);
+    }
+    if(userdata.getFriends().getSize() != 0){
+        std::cout << "friends" << std::endl;
+        rapidjson::Value array(rapidjson::kArrayType);
+        std::cout << "array" << std::endl;
+        std::cout << "size: " << userdata.getFriends().getSize() << std::endl;
+        auto *node = userdata.getFriends().getHead();
+        std::cout << "before for" << std::endl;
+        for(int i = 0; i < userdata.getFriends().getSize(); i++){
+            Value textPart;
+            std::string string = node->getData();
+            textPart.SetString(string.c_str(), allocator);
+            array.PushBack(textPart, allocator);
+            node = node->getNext();
+        }
+        object.AddMember("friends", array, allocator);
+    }
+    if(userdata.getPreferences().getSize() != 0){
+        std::cout << "preferences" << std::endl;
+        rapidjson::Value array(rapidjson::kArrayType);
+        Node<std::string> *node = userdata.getPreferences().getHead();
+        for(int i = 0; i < userdata.getPreferences().getSize(); i++){
+            Value textPart;
+            std::string string = node->getData();
+            textPart.SetString(string.c_str(), allocator);
+            array.PushBack(textPart, allocator);
+            node = node->getNext();
+        }
+        object.AddMember("preferences", array, allocator);
+    }
+
+    d["users"].PushBack(object, allocator);
+
+
+    FILE* fp2 = fopen("../DataBase/database.json", "w"); // non-Windows use "w"
+    char writeBuffer[65536];
+    FileWriteStream os(fp2, writeBuffer, sizeof(writeBuffer));
+    Writer<FileWriteStream> writer(os);
+    d.Accept(writer);
+    fclose(fp2);
+}

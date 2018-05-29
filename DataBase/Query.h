@@ -27,6 +27,8 @@ public:
     SimpleLinkedList<Userdata> getUsers();
     SimpleLinkedList<std::string> getUserFriends(std::string username);
     SimpleLinkedList<std::string> getUserPreferences(std::string username);
+    void addNewUser(Userdata userdata);
+    void addNewTrack(Metadata metadata);
 
 };
 
