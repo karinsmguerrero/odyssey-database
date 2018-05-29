@@ -102,6 +102,9 @@
 		<Unit filename="/home/karina/Dropbox/TEC/2018/Algoritmos y estructuras de datos II/ServerDataBase/base de datos y xml modificados/DataBase/Userdata.h">
 			<Option target="ServerDataBase"/>
 		</Unit>
+		<Unit filename="/home/karina/Dropbox/TEC/2018/Algoritmos y estructuras de datos II/ServerDataBase/base de datos y xml modificados/DataStructures/SimpleLinkedList.h">
+			<Option target="ServerDataBase"/>
+		</Unit>
 		<Unit filename="/home/karina/Dropbox/TEC/2018/Algoritmos y estructuras de datos II/ServerDataBase/base de datos y xml modificados/XML/XML_Editor.cpp">
 			<Option target="ServerDataBase"/>
 		</Unit>

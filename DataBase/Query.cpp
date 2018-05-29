@@ -340,6 +340,7 @@ void Query::addNewUser(Userdata userdata) {
         rapidjson::Value array(rapidjson::kArrayType);
         std::cout << "array" << std::endl;
         std::cout << "size: " << userdata.getFriends().getSize() << std::endl;
+        std::cout << userdata.getFriends().getHead()->getNext()->getData() << std::endl;
         auto *node = userdata.getFriends().getHead();
         std::cout << "before for" << std::endl;
         for(int i = 0; i < userdata.getFriends().getSize(); i++){
