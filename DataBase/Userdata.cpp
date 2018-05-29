@@ -32,9 +32,11 @@ void Userdata::setFriends(SimpleLinkedList<std::string> friends) {
 Userdata::Userdata() {
     this->username = "";
     this->password = "";
+    
 }
 
 Userdata::Userdata(std::string username, std::string password, SimpleLinkedList<std::string> friends, SimpleLinkedList<std::string> preferences) {
+
     this->username = username;
     this->password = password;
     this->friends = friends;

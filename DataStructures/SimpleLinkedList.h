@@ -58,8 +58,7 @@ SimpleLinkedList<T>::SimpleLinkedList() {
 
 template<typename T>
 SimpleLinkedList<T>::~SimpleLinkedList() {
-    delete head;
-    delete tail;
+
 }
 
 template<typename T>
